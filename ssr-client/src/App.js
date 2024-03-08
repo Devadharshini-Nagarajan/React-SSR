@@ -12,8 +12,8 @@ const LoadingScreen = () => {
 function App() {
   return (
     <div className="App">
+      React 18 SSR
       <Suspense fallback={LoadingScreen}>
-        React 18 SSR
         <CarsComponent />
       </Suspense>
     </div>

@@ -6,7 +6,7 @@
     "ssr-client"
   ],
   "scripts": {
-    "start:server": "nodemon Bootstrap.js",
+    "start:server": "npm run build:client && nodemon Bootstrap.js",
     "start:client": "cross-env PORT=3008 npm run start --workspace ssr-client ",
     "build:client": "npm run build --workspace ssr-client",
     "test": "echo \"Error: no test specified\" && exit 1"
